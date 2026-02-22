@@ -74,20 +74,16 @@ access the website (http://127.0.0.1.8080)
 
 #### Screenshots (Add at least 3)
 
-<p align="center">
-  <img src="WhatsApp Image 2026-02-22 at 09.30.53.jpeg" alt="Project Banner" width="100%">
-</p>
+![Image](https://github.com/user-attachments/assets/fe7d5db1-56dc-4dcc-9c47-1fe452e2404e)
 *This is the Home Page*
 
-<p align="center">
-  <img src="WhatsApp Image 2026-02-22 at 09.38.08.jpeg" alt="Project Banner" width="100%">
-</p>
+![Image](https://github.com/user-attachments/assets/d56c7175-6031-4996-8101-1a276bde4ae0)
 *This is a feature to track their wellness*
 
-<p align="center">
-  <img src="WhatsApp Image 2026-02-22 at 09.38.49.jpeg" alt="Project Banner" width="100%">
-</p>
+![Image](https://github.com/user-attachments/assets/dc695453-a1ae-4e90-bff1-8c363f4d3b26)
 *This is the dashboard*
+
+![Image](https://github.com/user-attachments/assets/dc695453-a1ae-4e90-bff1-8c363f4d3b26)
 
 #### Diagrams
 
