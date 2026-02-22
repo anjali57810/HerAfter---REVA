@@ -1,0 +1,37 @@
+const express = require("express");
+const cors = require("cors");
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// Test route
+app.get("/", (req, res) => {
+    res.send("Reva backend is running 💜");
+});
+
+// Chat simulation route
+app.post("/chat", (req, res) => {
+    const userMessage = req.body.message;
+
+    let reply = "You're doing amazing. I'm here for you 💜";
+
+    if (userMessage.toLowerCase().includes("tired")) {
+        reply = "It's okay to feel tired. Rest when your baby rests 🤍";
+    } else if (userMessage.toLowerCase().includes("sad")) {
+        reply = "You're not alone. Your feelings are valid 💜";
+    }
+
+    res.json({ response: reply });
+});
+
+// Contact form receiver (simple echo/acknowledgement)
+app.post('/contact', (req, res) => {
+    const { name, email, message } = req.body || {};   console.log('Contact form received:', { name, email, message });
+    res.json({ status: 'ok', message: 'Thanks — we received your message.' });
+});
+
+app.listen(5000, () => {
+    console.log("Server running on http://localhost:5000");
+});

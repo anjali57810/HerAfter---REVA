@@ -2,27 +2,26 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [Project Name] 🎯REVA
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: HerAfter
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Anjali Biju - Toc H Institute of Science and Technology
+- Member 2: Deepika Raj - Toc H Institute of Science and Technology
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
-
+REVA ia an AI-Powered platform designed to support Postpartum mothers by tracking wellness, providing guided exerises and offering personalied guidance. It features a premium shopping section for mom and baby products and interactive AI chatbot and a blog with validated research. REVA empowers mothers with tools, resources and commuity support, all in a wam, user friendly and responsive website
 ### The Problem statement
-[What problem are you solving?]
+Postpartum mothers often face physical, emotional and mental challenges, including mood fluctuations, lackof guidance for exercises, irregular sleep patterns and limited access to trusted resourses for products for themselves and their babies. Existing solutions are scattered, impersonal or overwhelming, leaving mothers without a centralised, supportive and user friendly transform to track their wellness, recieve guidance and access relevant products
 
 ### The Solution
-[How are you solving it?]
+REVA is a centralized, AI powered platform that supports postpartum mothers by providing personalised wellness, tracking, guided exercises and interactive AI chatbot. It integrates a premium shopping section for mom and baby products, a research backed blog and community resources all in a warm, user friendly, and responsive website. REVA empowers mothers with tools, guidance and support to improve their physical and emotional wellbeing during their postpartum period
 
 ---
 
@@ -31,25 +30,22 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
-
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- Languages used: JavaScript, html, css
+- Frameworks used: none/ vanilla javascript
+- Libraries used: none
+- Tools used: VS Code, Git
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: AI CHATBOT: Provides personalized guidance, tip and support
+- Feature 2: GUIDED EXERCISES: breathing, streching, and relaxatio exercises
+- Feature 3: MOOD, SLEEP AND BABY TRACKER: Input forms for mood, sleep and baby milestones
+- Feature 4: PREMIUM SHOPPING MODULE: Browse curated mom and baby products
+- Feature 5: Blog with Research papers: Valid research-backed articles on postpartum care
+
 
 ---
 
@@ -61,19 +57,14 @@ List the key features of your project:
 ```bash
 [Installation commands - e.g., npm install, pip install -r requirements.txt]
 ```
-
+Clone the repository, Initialize Node.js, Install development dependencies
 #### Run
 ```bash
 [Run commands - e.g., npm start, python app.py]
+Run the project locally (npx live-server)
+access the website (http://127.0.0.1.8080)
 ```
 
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
 
 ---
 
@@ -83,290 +74,112 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<p align="center">
+  <img src="WhatsApp Image 2026-02-22 at 09.30.53.jpeg" alt="Project Banner" width="100%">
+</p>
+*This is the Home Page*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<p align="center">
+  <img src="WhatsApp Image 2026-02-22 at 09.38.08.jpeg" alt="Project Banner" width="100%">
+</p>
+*This is a feature to track their wellness*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<p align="center">
+  <img src="WhatsApp Image 2026-02-22 at 09.38.49.jpeg" alt="Project Banner" width="100%">
+</p>
+*This is the dashboard*
 
 #### Diagrams
 
-**System Architecture:**
-
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
-
 **Application Workflow:**
 
-![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
-
----
-
-### For Hardware:
-
-#### Schematic & Circuit
-
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-#### Build Photos
-
-![Team](Add photo of your team here)
-
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
+<p align="center">
+  <img src="REVA application workflow infographic.png" alt="Project Banner" width="100%">
+</p>
+*Landing Page → Dashboard → [Exercises | Tracker | Chat | Shop | Blog | Forms] → User Interacts → Data Stored in LocalStorage → Dashboard Updates*
 
 ---
 
 ## Additional Documentation
 
 ### For Web Projects with Backend:
+  Backend Setup
 
-#### API Documentation
+Choose a backend framework (Node.js + Express, Python + Flask/Django, etc.)
 
-**Base URL:** `https://api.yourproject.com`
+Create routes for features that currently use localStorage:
 
-##### Endpoints
+/api/chat → AI chatbot messages
 
-**GET /api/endpoint**
-- **Description:** [What it does]
-- **Parameters:**
-  - `param1` (string): [Description]
-  - `param2` (integer): [Description]
-- **Response:**
-```json
-{
-  "status": "success",
-  "data": {}
-}
-```
+/api/exercises → Exercise progress
 
-**POST /api/endpoint**
-- **Description:** [What it does]
-- **Request Body:**
-```json
-{
-  "field1": "value1",
-  "field2": "value2"
-}
-```
-- **Response:**
-```json
-{
-  "status": "success",
-  "message": "Operation completed"
-}
-```
+/api/tracker → Mood, sleep, and baby data
 
-[Add more endpoints as needed...]
+/api/shop → Cart, wishlist, product data
 
----
+/api/blog → Blog posts & research references
 
-### For Mobile Apps:
+Database Integration
 
-#### App Flow Diagram
+Use a database (e.g., MongoDB, MySQL, PostgreSQL) to store:
 
-![App Flow](docs/app-flow.png)
-*Explain the user flow through your application*
+User accounts & authentication
 
-#### Installation Guide
+Exercise & tracker data
 
-**For Android (APK):**
-1. Download the APK from [Release Link]
-2. Enable "Install from Unknown Sources" in your device settings:
-   - Go to Settings > Security
-   - Enable "Unknown Sources"
-3. Open the downloaded APK file
-4. Follow the installation prompts
-5. Open the app and enjoy!
+Shopping cart & orders
 
-**For iOS (IPA) - TestFlight:**
-1. Download TestFlight from the App Store
-2. Open this TestFlight link: [Your TestFlight Link]
-3. Click "Install" or "Accept"
-4. Wait for the app to install
-5. Open the app from your home screen
+Blog posts & comments
 
-**Building from Source:**
-```bash
-# For Android
-flutter build apk
-# or
-./gradlew assembleDebug
+Implement CRUD operations for each module
 
-# For iOS
-flutter build ios
-# or
-xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
-```
+Authentication & Security
 
----
+Add user authentication (JWT, sessions, or OAuth)
 
-### For Hardware Projects:
+Encrypt sensitive data like passwords
 
-#### Bill of Materials (BOM)
-
-| Component | Quantity | Specifications | Price | Link/Source |
-|-----------|----------|----------------|-------|-------------|
-| Arduino Uno | 1 | ATmega328P, 16MHz | ₹450 | [Link] |
-| LED | 5 | Red, 5mm, 20mA | ₹5 each | [Link] |
-| Resistor | 5 | 220Ω, 1/4W | ₹1 each | [Link] |
-| Breadboard | 1 | 830 points | ₹100 | [Link] |
-| Jumper Wires | 20 | Male-to-Male | ₹50 | [Link] |
-| [Add more...] | | | | |
-
-**Total Estimated Cost:** ₹[Amount]
-
-#### Assembly Instructions
-
-**Step 1: Prepare Components**
-1. Gather all components listed in the BOM
-2. Check component specifications
-3. Prepare your workspace
-![Step 1](images/assembly-step1.jpg)
-*Caption: All components laid out*
-
-**Step 2: Build the Power Supply**
-1. Connect the power rails on the breadboard
-2. Connect Arduino 5V to breadboard positive rail
-3. Connect Arduino GND to breadboard negative rail
-![Step 2](images/assembly-step2.jpg)
-*Caption: Power connections completed*
-
-**Step 3: Add Components**
-1. Place LEDs on breadboard
-2. Connect resistors in series with LEDs
-3. Connect LED cathodes to GND
-4. Connect LED anodes to Arduino digital pins (2-6)
-![Step 3](images/assembly-step3.jpg)
-*Caption: LED circuit assembled*
-
-**Step 4: [Continue for all steps...]**
-
-**Final Assembly:**
-![Final Build](images/final-build.jpg)
-*Caption: Completed project ready for testing*
-
----
-
-### For Scripts/CLI Tools:
-
-#### Command Reference
-
-**Basic Usage:**
-```bash
-python script.py [options] [arguments]
-```
-
-**Available Commands:**
-- `command1 [args]` - Description of what command1 does
-- `command2 [args]` - Description of what command2 does
-- `command3 [args]` - Description of what command3 does
-
-**Options:**
-- `-h, --help` - Show help message and exit
-- `-v, --verbose` - Enable verbose output
-- `-o, --output FILE` - Specify output file path
-- `-c, --config FILE` - Specify configuration file
-- `--version` - Show version information
-
-**Examples:**
-
-```bash
-# Example 1: Basic usage
-python script.py input.txt
-
-# Example 2: With verbose output
-python script.py -v input.txt
-
-# Example 3: Specify output file
-python script.py -o output.txt input.txt
-
-# Example 4: Using configuration
-python script.py -c config.json --verbose input.txt
-```
-
-#### Demo Output
-
-**Example 1: Basic Processing**
-
-**Input:**
-```
-This is a sample input file
-with multiple lines of text
-for demonstration purposes
-```
-
-**Command:**
-```bash
-python script.py sample.txt
-```
-
-**Output:**
-```
-Processing: sample.txt
-Lines processed: 3
-Characters counted: 86
-Status: Success
-Output saved to: output.txt
-```
-
-**Example 2: Advanced Usage**
-
-**Input:**
-```json
-{
-  "name": "test",
-  "value": 123
-}
-```
-
-**Command:**
-```bash
-python script.py -v --format json data.json
-```
-
-**Output:**
-```
-[VERBOSE] Loading configuration...
-[VERBOSE] Parsing JSON input...
-[VERBOSE] Processing data...
-{
-  "status": "success",
-  "processed": true,
-  "result": {
-    "name": "test",
-    "value": 123,
-    "timestamp": "2024-02-07T10:30:00"
-  }
-}
-[VERBOSE] Operation completed in 0.23s
-```
+Validate all inputs to prevent injections
 
 ---
 
 ## Project Demo
 
 ### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
 
-*Explain what the video demonstrates - key features, user flow, technical highlights*
+https://drive.google.com/file/d/1a4CD4Kt_2sQeZYh50q0W8B3QHu6Jmr_f/view?usp=sharing
 
-### Additional Demos
-[Add any extra demo materials/links - Live site, APK download, online demo, etc.]
+*Landing / Login:
+
+Users open the website and log in or continue as a guest.
+
+Dashboard / Navigation:
+
+Users access the main dashboard with navigation links to all modules: Exercises, Tracker, AI Chat, Shop, Blog, and Forms.
+
+User Interaction:
+
+AI Chat: Users ask questions or get guidance.
+
+Exercises: Follow guided exercises and track progress.
+
+Tracker: Log mood, sleep, and baby milestones.
+
+Shop: Browse and add products to cart/wishlist.
+
+Blog: Read research-backed articles.
+
+Forms: Newsletter signup or contact form submissions.
+
+Data Handling:
+
+All user interactions are stored in localStorage (placeholder for backend).
+
+Dashboard updates dynamically based on user activity.
+
+Exit / Logout:
+
+Users can log out, return to the landing page, or close the app.*
 
 ---
 
@@ -374,19 +187,16 @@ python script.py -v --format json data.json
 
 If you used AI tools during development, document them here for transparency:
 
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
+**Tool Used:** GitHub Copilot, ChatGPT
 
-**Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
-- Example: "Debugging assistance for async functions"
-- Example: "Code review and optimization suggestions"
+**Purpose:** The purpose of REVA is to provide postpartum mothers with a centralized, supportive, and user-friendly platform that helps them track wellness, access research-backed guidance, perform guided exercises, shop for mom and baby products, and receive personalized AI support—all in one warm and premium web application.
 
 **Key Prompts Used:**
 - "Create a REST API endpoint for user authentication"
 - "Debug this async function that's causing race conditions"
 - "Optimize this database query for better performance"
 
-**Percentage of AI-generated code:** [Approximately X%]
+**Percentage of AI-generated code:** [Approximately 58%]
 
 **Human Contributions:**
 - Architecture design and planning
@@ -400,9 +210,9 @@ If you used AI tools during development, document them here for transparency:
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
-- [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
+- Anjali: frontend
+- Deepika : Backend
+- 
 
 ---
 

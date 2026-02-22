@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Welcome — REVA</title>
+  <meta name="description" content="Welcome to REVA — your AI companion for postpartum support">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root{
+      --rose:#C77DBA;
+      --teal:#6BA8A3;
+      --cream:#FBF8F6;
+      --muted:#6b7280;
+      --bg: linear-gradient(180deg, #FBF8F6 0%, #FFFDFD 100%);
+      --card:#ffffff;
+      --shadow: 0 6px 24px rgba(12,12,12,0.08);
+      --radius:14px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    html,body{height:100%;margin:0;background:var(--bg);color:#111}
+    .login-root{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px}
+
+    .login-card{width:100%;max-width:980px;background:transparent;display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center}
+
+    @media (max-width:900px){
+      .login-card{grid-template-columns:1fr;max-width:720px;padding:20px}
+    }
+
+    /* Left illustration */
+    .hero-panel{position:relative;padding:36px;border-radius:var(--radius);background:linear-gradient(135deg, rgba(199,125,186,0.08), rgba(107,168,163,0.04));overflow:hidden}
+    .hero-inner{max-width:560px}
+    .brand{font-weight:700;color:var(--rose);font-size:1rem;margin-bottom:10px}
+    h1{font-family: 'Playfair Display', serif;font-size:2rem;margin:0 0 12px;color:#0f172a}
+    p.lead{margin:0 0 18px;color:var(--muted);line-height:1.5}
+
+    .floating-icons{position:absolute;right:-40px;top:-30px;pointer-events:none;opacity:0.9}
+    .floating-icons svg{width:120px;height:120px;animation:float 6s ease-in-out infinite}
+    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(8px)}100%{transform:translateY(0)}}
+
+    /* Right form */
+    .form-panel{background:var(--card);padding:28px;border-radius:12px;box-shadow:var(--shadow)}
+    .welcome{font-size:1.1rem;font-weight:700;margin-bottom:6px}
+    .welcome-sub{color:var(--muted);margin-bottom:18px}
+
+    .social-row{display:flex;gap:10px;margin-bottom:14px}
+    .btn-social{flex:1;padding:12px;border-radius:10px;border:1px solid #eee;background:#fff;cursor:pointer;display:flex;align-items:center;gap:10px;justify-content:center;font-weight:600;transition:transform .15s ease,box-shadow .15s}
+    .btn-social:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+    .btn-google{border-color:#e8e8e8}
+    .btn-apple{border-color:#e8e8e8}
+
+    .divider{display:flex;align-items:center;gap:12px;color:#cbd5e1;margin:16px 0}
+    .divider:before,.divider:after{content:'';height:1px;background:#eee;flex:1;border-radius:2px}
+
+    form{display:flex;flex-direction:column;gap:12px}
+    label{font-size:0.85rem;color:var(--muted);font-weight:600}
+    .input{width:100%;padding:12px 14px;border:1px solid #e6e6e6;border-radius:10px;font-size:1rem;transition:border-color .18s,box-shadow .18s}
+    .input:focus{outline:none;border-color:var(--rose);box-shadow:0 6px 18px rgba(199,125,186,0.12)}
+
+    .row{display:flex;gap:12px}
+    .btn-primary{background:var(--rose);color:#fff;padding:12px;border-radius:10px;border:none;cursor:pointer;font-weight:700;transition:transform .15s ease}
+    .btn-primary:hover{transform:translateY(-3px)}
+    .link-lite{background:transparent;border:1px solid #f0f0f0;padding:10px;border-radius:10px;cursor:pointer}
+
+    .helper{font-size:0.9rem;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    .error{color:#ef4444;font-size:0.9rem;margin-top:6px;display:none}
+    .show{display:block}
+
+    .signup{margin-top:8px;text-align:center}
+    .signup a{color:var(--rose);font-weight:700;text-decoration:none}
+
+    footer.site-footer{margin-top:18px;text-align:center;color:var(--muted);font-size:0.9rem}
+
+    .bg-illustration{position:absolute;left:-80px;bottom:-40px;opacity:0.08;transform:rotate(-8deg)}
+
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <main class="login-root">
+    <div class="login-card" role="main">
+      <section class="hero-panel" aria-hidden="false">
+        <div class="hero-inner">
+          <div class="brand">REVA</div>
+          <h1>Welcome to REVA</h1>
+          <p class="lead">Your AI companion for postpartum support — gentle guidance, practical tips, and a caring companion for every day.</p>
+
+          <p style="margin-top:18px;color:var(--muted)">Shop, track, and join a supportive community built for new mothers.</p>
+
+          <div style="margin-top:24px;display:flex;gap:12px;align-items:center">
+            <div style="width:64px;height:64px;background:linear-gradient(135deg,var(--rose),var(--teal));border-radius:12px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700">💜</div>
+            <div>
+              <div style="font-weight:700">Empowering Mothers</div>
+              <div style="color:var(--muted);font-size:0.95rem">Supportive tools and curated products</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-icons" aria-hidden="true">
+          <!-- simple SVG illustration of mother & baby -->
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <g transform="translate(10,10)">
+              <circle cx="80" cy="70" r="60" fill="url(#g)" opacity="0.9"/>
+              <path d="M60 90c10-18 36-18 46 0" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="72" cy="60" r="6" fill="#fff"/>
+              <circle cx="96" cy="60" r="8" fill="#fff"/>
+            </g>
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#C77DBA"/>
+                <stop offset="1" stop-color="#6BA8A3"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <svg class="bg-illustration" width="320" height="220" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g fill="none" fill-rule="evenodd">
+            <circle cx="60" cy="160" r="80" fill="#C77DBA" opacity="0.06"/>
+            <circle cx="240" cy="80" r="60" fill="#6BA8A3" opacity="0.06"/>
+          </g>
+        </svg>
+      </section>
+
+      <aside class="form-panel" aria-labelledby="welcome-title">
+        <div>
+          <div class="welcome" id="welcome-title">Welcome to REVA, your AI companion</div>
+          <div class="welcome-sub">Gentle support for postpartum recovery — sign in to continue</div>
+
+          <div class="social-row">
+            <button class="btn-social btn-google" id="googleBtn" aria-label="Continue with Google"> <img src="https://www.svgrepo.com/show/355037/google-color.svg" alt="" style="width:18px;height:18px"> CONTINUE WITH GOOGLE</button>
+            <button class="btn-social btn-apple" id="appleBtn" aria-label="Continue with Apple"> <img src="https://www.svgrepo.com/show/303128/apple-logo.svg" alt="" style="width:18px;height:18px"> CONTINUE WITH APPLE</button>
+          </div>
+
+          <div class="divider">or continue with email</div>
+
+          <form id="loginForm" novalidate>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" autocomplete="email" class="input" placeholder="you@domain.com" required>
+              <div id="emailError" class="error">Please enter a valid email address</div>
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input id="password" type="password" autocomplete="current-password" class="input" placeholder="Enter your password" required>
+              <div id="passwordError" class="error">Password must be at least 8 characters</div>
+            </div>
+
+            <div class="helper">
+              <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" id="remember"> Remember me</label>
+              <a href="#" style="color:var(--rose);text-decoration:none;font-weight:700">Forgot?</a>
+            </div>
+
+            <button type="submit" class="btn-primary">Sign in</button>
+
+            <div class="signup">New to REVA? <a href="signup.html">Create an account</a></div>
+            <div id="submitError" class="error" role="alert">Invalid credentials. Please try again.</div>
+          </form>
+
+          <footer class="site-footer">Empowering mothers, supporting families</footer>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script>
+    // Basic interactivity & validation (placeholder for backend integration)
+    (function(){
+      const form = document.getElementById('loginForm');
+      const email = document.getElementById('email');
+      const password = document.getElementById('password');
+      const emailError = document.getElementById('emailError');
+      const passwordError = document.getElementById('passwordError');
+      const submitError = document.getElementById('submitError');
+      const googleBtn = document.getElementById('googleBtn');
+      const appleBtn = document.getElementById('appleBtn');
+
+      function validEmail(v){
+        return /\S+@\S+\.\S+/.test(v);
+      }
+
+      email.addEventListener('input', ()=>{
+        emailError.classList.remove('show');
+        submitError.classList.remove('show');
+      });
+
+      password.addEventListener('input', ()=>{
+        passwordError.classList.remove('show');
+        submitError.classList.remove('show');
+      });
+
+      form.addEventListener('submit', async (e)=>{
+        e.preventDefault();
+        let ok=true;
+        if(!validEmail(email.value.trim())){emailError.classList.add('show');ok=false}
+        if(!password.value || password.value.length < 8){passwordError.classList.add('show');ok=false}
+        if(!ok) return;
+
+        // Visual feedback
+        const btn = form.querySelector('.btn-primary');
+        btn.disabled = true; btn.textContent = 'Signing in...';
+
+        try{
+          const res = await fetch('http://localhost:5000/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email.value,password:password.value})});
+          if(res.ok){
+            const data = await res.json();
+            try {
+              localStorage.setItem('reva_logged_in','1');
+              localStorage.setItem('reva_user_email', data.user?.email || email.value.trim());
+              if (data.token) localStorage.setItem('reva_token', data.token);
+              if (data.user?.name) localStorage.setItem('reva_user_name', data.user.name);
+            } catch(e){}
+            const after = localStorage.getItem('reva_after_login') || 'index.html';
+            window.location.href = after || 'index.html';
+          } else {
+            submitError.textContent = 'Invalid email or password.';
+            submitError.classList.add('show');
+            btn.disabled=false; btn.textContent='Sign in';
+          }
+        }catch(err){
+          console.error('Login error',err);
+          submitError.textContent = 'Unable to connect. Please try again.';
+          submitError.classList.add('show');
+          btn.disabled=false; btn.textContent='Sign in';
+        }
+      });
+
+      // Social login placeholders
+      googleBtn.addEventListener('click', ()=>{
+        console.log('Google OAuth placeholder');
+        window.location.href = '/auth/google';
+      });
+      appleBtn.addEventListener('click', ()=>{
+        console.log('Apple OAuth placeholder');
+        window.location.href = '/auth/apple';
+      });
+
+      // Accessibility: focus on email
+      email.focus();
+    })();
+  </script>
+</body>
+</html>

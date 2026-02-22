@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REVA - Premium Postpartum Support</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="sticky-nav">
+    <div class="logo">REVA <span class="logo-heart">💜</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#chat">Chat</a>
+      <a href="#exercises">Exercises</a>
+      <a href="#tracking">Tracking</a>
+      <a href="#shop">Shop</a>
+      <a href="#community">Community</a>
+      <a href="#contact">Contact</a>
+      <a href="#login" class="login-btn">Login</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero-section fade-in">
+    <div class="hero-content">
+      <h1>Welcome to REVA</h1>
+      <p class="hero-sub">Nurturing You, Nurturing New Life</p>
+      <p class="hero-desc">Compassionate postpartum support, expert guidance, and a warm community for every mother’s journey.</p>
+      <button id="chatBtn" class="cta-btn">Chat with REVA Now</button>
+    </div>
+    <div class="hero-illustration"></div>
+  </section>
+
+  <!-- AI Chat Section -->
+  <section id="chat" class="section fade-in">
+    <div class="section-title"><span class="icon-chat"></span> AI Chat Support</div>
+    <div id="revaChatContainer" class="reva-chat-container">
+      <div class="reva-chat-header">
+        <span>Reva 💜</span>
+        <button class="reva-chat-close" onclick="closeRevaChat()">✕</button>
+      </div>
+      <div id="revaChatBox" class="reva-chat-box">
+        <div class="reva-chat-message bot">
+          Welcome to Reva! I'm here to support you with compassion and care. What's on your mind today?
+        </div>
+      </div>
+      <div class="reva-chat-input-area">
+        <input type="text" id="revaChatInput" placeholder="Type your message..." autocomplete="off" />
+        <button id="revaChatSendBtn">Send</button>
+      </div>
+      <div id="revaChatTyping" class="reva-chat-typing" style="display:none;">Reva is typing...</div>
+    </div>
+    <button class="reva-chat-open" onclick="openRevaChat()">Chat with Reva Now</button>
+  </section>
+
+  <!-- Exercises Section -->
+  <section id="exercises" class="section fade-in">
+    <div class="section-title"><span class="icon-exercise"></span> Guided Exercises</div>
+    <button id="tryExerciseBtn" class="cta-btn">Try the Exercise</button>
+    <div id="exerciseModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeExerciseModal()">&times;</span>
+        <h2>Guided Exercises</h2>
+        <ul>
+          <li>Breathing Exercise <button onclick="markExerciseCompleted('Breathing Exercise')">Mark Complete</button></li>
+          <li>Gentle Stretch <button onclick="markExerciseCompleted('Gentle Stretch')">Mark Complete</button></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tracking Section -->
+  <section id="tracking" class="section fade-in">
+    <div class="section-title"><span class="icon-tracking"></span> Mood, Sleep & Baby Tracking</div>
+    <button id="trackPatternsBtn" class="cta-btn">Start Tracking Patterns</button>
+    <div id="trackingModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeTrackingModal()">&times;</span>
+        <h2>Track Your Progress</h2>
+        <form id="trackingForm">
+          <input type="text" name="mood" placeholder="Mood" required />
+          <input type="text" name="sleep" placeholder="Sleep" required />
+          <input type="text" name="milestone" placeholder="Baby Milestone" required />
+          <textarea name="notes" placeholder="Notes"></textarea>
+          <button type="submit">Save Entry</button>
+        </form>
+        <div id="trackingDashboard"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="section fade-in">
+    <div class="section-title"><span class="icon-shop"></span> Shop for Mom & Baby</div>
+    <button id="shopBtn" class="cta-btn">Browse Products</button>
+    <button id="addToCartBtn" class="cta-btn">Add to Cart</button>
+    <button id="wishlistBtn" class="cta-btn">Add to Wishlist</button>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" class="section fade-in">
+    <div class="section-title"><span class="icon-community"></span> Community & Support</div>
+    <p>Connect with other mothers, join forums, attend virtual meetups, and participate in weekly challenges.</p>
+  </section>
+
+  <!-- Contact/Forms Section -->
+  <section id="contact" class="section fade-in">
+    <div class="section-title"><span class="icon-contact"></span> Contact & Newsletter</div>
+    <form id="newsletterForm">
+      <input type="email" name="email" placeholder="Your Email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <form id="signupForm">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <footer class="footer fade-in">
+    <div>© 2026 REVA. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
