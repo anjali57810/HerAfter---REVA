@@ -89,9 +89,7 @@ access the website (http://127.0.0.1.8080)
 
 **Application Workflow:**
 
-<p align="center">
-  <img src="REVA application workflow infographic.png" alt="Project Banner" width="100%">
-</p>
+![Image](https://github.com/user-attachments/assets/682a654f-c5b8-4749-b2d0-5cb9644a72cb)
 *Landing Page → Dashboard → [Exercises | Tracker | Chat | Shop | Blog | Forms] → User Interacts → Data Stored in LocalStorage → Dashboard Updates*
 
 ---
@@ -208,7 +206,6 @@ If you used AI tools during development, document them here for transparency:
 
 - Anjali: frontend
 - Deepika : Backend
-- 
 
 ---
 
