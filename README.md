@@ -77,10 +77,10 @@ access the website (http://127.0.0.1.8080)
 ![Image](https://github.com/user-attachments/assets/fe7d5db1-56dc-4dcc-9c47-1fe452e2404e)
 *This is the Home Page*
 
-![Image](https://github.com/user-attachments/assets/d56c7175-6031-4996-8101-1a276bde4ae0)
+![Image](https://github.com/user-attachments/assets/060f6395-04f9-41dc-a27a-938f73a2b952)
 *This is a feature to track their wellness*
 
-![Image](https://github.com/user-attachments/assets/dc695453-a1ae-4e90-bff1-8c363f4d3b26)
+![Image](https://github.com/user-attachments/assets/a3264d8d-b399-4fa3-ad0b-4e7466aa7fbf)
 *This is the dashboard*
 
 ![Image](https://github.com/user-attachments/assets/dc695453-a1ae-4e90-bff1-8c363f4d3b26)
