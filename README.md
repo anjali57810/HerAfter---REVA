@@ -83,7 +83,7 @@ access the website (http://127.0.0.1.8080)
 ![Image](https://github.com/user-attachments/assets/a3264d8d-b399-4fa3-ad0b-4e7466aa7fbf)
 *This is the dashboard*
 
-![Image](https://github.com/user-attachments/assets/dc695453-a1ae-4e90-bff1-8c363f4d3b26)
+![Image](https://github.com/user-attachments/assets/d1853ef6-2827-401f-ae63-d275626da00d)
 
 #### Diagrams
 
